@@ -25,8 +25,10 @@ def search_pdfs(path, input):
 
 
 def main():
-    user_input = input()
-    search_pdfs(path, user_input)
+    while True:
+        print("Please enter a keyword(s) to search: ")
+        user_input = input()
+        search_pdfs(path, user_input)
 
 
 if __name__ == "__main__":
